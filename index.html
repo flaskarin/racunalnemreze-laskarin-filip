@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPv6 skraćivač</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>IPv6 skraćivač adrese</h1>
+    <p class="subtitle">
+      Unesi IPv6 adresu u punom obliku (8 blokova po 4 heksadekadska znaka), a aplikacija će ispisati skraćeni zapis.
+    </p>
+
+    <section class="card">
+        
+        <div class="unos">
+            <label for="ipv6Input">IPv6 adresa (maksimalni oblik)</label>
+            <input
+                id="ipv6Input"
+                type="text"
+                placeholder="npr. 2001:0db8:0000:0000:0000:ff00:0042:8329"
+            />
+        </div>    
+
+        <div class="buttons">
+            <button id="shortenBtn">Skrati</button>
+            <button id="clearBtn" type="button" class="secondary">Očisti</button>
+        </div>
+
+        <div class="output-block">
+            <h2>Rezultat</h2>
+            <p id="result">—</p>
+        </div>
+        
+        <div class="output-block error-block">
+            <h2>Poruka</h2>
+            <p id="message">Unesi adresu i klikni na “Skrati”.</p>
+        </div>
+    </section>
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
